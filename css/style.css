@@ -106,6 +106,10 @@ header a:hover{
 
 /* Boxes */
 
+#boxin{
+    padding-top: 10%;
+}
+
 #boxes h1{
     padding: 10px;
     background: #5c4747;
@@ -129,12 +133,29 @@ header a:hover{
     font-size: 80%;
 }
 
+#boxin .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxin .box img{
+    width: 100px;
+    height: 100px;
+}
+
+#boxins .box img{
+    width: 100px;
+    height: 100px;
+}
+
 /* Footer */
 
 footer{
-    padding: 10px;
+    padding: 5px;
     margin-top:20px;
-    background-color:gray;
+    background-color:rgb(194, 186, 186);
     color: white;
     text-align: center;
 }
