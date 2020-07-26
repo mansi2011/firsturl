@@ -14,7 +14,7 @@ body{
 .container{
     width:80%;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Header */
@@ -28,7 +28,7 @@ header{
     padding-top: 30px;
     min-height: 70px;
     border-bottom: orangered 3px solid;
-    display: flex;
+    /* display: flex; */
 }
 
 /* .site-header-content{
@@ -86,14 +86,11 @@ header a:hover{
 /* Section */
 
 #showcase{
-    height: auto;
-    width: auto;
-    background: url('../img/images.jpg');
-    background-size: cover;
+    min-height: 400px;
+    background: url('../img/images.jpg') no-repeat  ;
+    background-size:cover;
     text-align: center;
     color: white;
-    padding-top: 5%;
-    padding-bottom: 5%;
     /* font-weight: bold; */
 }
 
@@ -157,7 +154,7 @@ header a:hover{
 
 footer{
     padding: 5px;
-    margin-top:20px;
+    margin-top:100px;
     background-color:rgb(194, 186, 186);
     color: white;
     text-align: center;
@@ -210,11 +207,22 @@ footer{
     }
     #content .display-pic{
         float: none;
-        margin: 0 50% 0 40%;
+        margin: 0 50% 10% 40%;
+        height: 150;
+        width: 150;
     }
 
     #content .my-content{
         text-align: center;
         width: auto;
+    }
+
+    .container{
+        overflow: visible;
+    }
+
+    #showcase{
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
