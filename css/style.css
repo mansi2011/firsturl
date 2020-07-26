@@ -14,7 +14,7 @@ body{
 .container{
     width:80%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Header */
@@ -55,7 +55,7 @@ ul{
     padding: 0;
 }
 
-header li{
+header nav li{
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
@@ -86,11 +86,14 @@ header a:hover{
 /* Section */
 
 #showcase{
-    min-height: 400px;
-    background: url('../img/images.jpg') no-repeat 0 -200px;
-    background-size: 100%;
+    height: auto;
+    width: auto;
+    background: url('../img/images.jpg');
+    background-size: cover;
     text-align: center;
     color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
     /* font-weight: bold; */
 }
 
@@ -162,21 +165,22 @@ footer{
     
 /* About */
 
-.display-pic{
+#content .display-pic{
     border-radius: 50%;
     height:200;
     width:200;
-    box-shadow: #5c4747 2px 5px 5px;  
+    box-shadow: #5c4747 2px 5px 5px; 
+    float: right;
+    max-width: 20%;
+    
+
     /* display: block; */
     
 }
 
-.image{
-    float: right;
-    width: 30%;
-}
 
-.content{
+
+#content{
     margin: 10%;
 }
 
@@ -196,4 +200,21 @@ footer{
     margin-top: 10px;
 }
     
+/* media queries */
 
+@media(max-width: 760px){
+    header #heading, header nav, header nav li,#boxes .box, #boxin .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #content .display-pic{
+        float: none;
+        margin: 0 50% 0 40%;
+    }
+
+    #content .my-content{
+        text-align: center;
+        width: auto;
+    }
+}
